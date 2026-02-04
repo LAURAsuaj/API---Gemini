@@ -1,31 +1,34 @@
-# Configuración de Entorno - Gemini API
+# Conexión a la API de Gemini con Python
 
-Guía rápida para configurar el entorno de desarrollo.
+Este proyecto demuestra cómo realizar la conexión a la API de Google Gemini utilizando Python.
+
 ---
 
-## 1. Configuración Inicial
-1. Crear carpeta `gemini-api` en `C:\`.
-2. Abrir la carpeta en **VS Code**.
-3. Abrir terminal: `Ctrl + ñ`.
+## Instalación y configuración
 
-## 2. Entorno Virtual (VENV)
-
-Ejecuta el comando según tu sistema para aislar las librerías:
-
-* **Windows:**
-    ```bash
-    python -m venv venv
-    .\venv\Scripts\Activate
-    ```
-* **macOS / Linux:**
-    ```bash
-    python3 -m venv venv
-    source venv/bin/activate
-    ```
-
-> **Nota:** En VS Code, usa `Ctrl + Shift + P` > `Python: Select Interpreter` y elige el que está dentro de la carpeta `venv`.
-
-## 3. Instalación de Dependencias
-Con el entorno activo, instala `requests`:
+### 1. Clonar el repositorio
 ```bash
-pip install requests
+git clone https://github.com/linaasco/Conexion_API.git
+### 2. Crear el entorno virtual
+python -m venv env
+### 3. Activar el entorno virtual
+Windows:
+
+env\Scripts\activate
+Linux / macOS:
+
+source env/bin/activate
+### 4. Instalar dependencias
+pip install -r requirements.txt
+### 5. Crear el archivo .env
+En la raíz del proyecto, crea un archivo llamado .env y agrega:
+
+GEMINI_API_KEY=TU_API_KEY
+Reemplaza TU_API_KEY por tu clave real de Gemini.
+
+### 6. Ejecutar el script
+python app_gemini.py
+
+## Evidencia de ejecución
+
+![Evidencia](evidencia.png)
