@@ -1,34 +1,43 @@
-# Conexión a la API de Gemini con Python
+#  Conexión a la API de Gemini con Python
 
-Este proyecto demuestra cómo realizar la conexión a la API de Google Gemini utilizando Python.
+Este proyecto demuestra cómo realizar la conexión a la API de Google Gemini utilizando Python de forma segura y organizada.
 
 ---
 
-## Instalación y configuración
+##  Instalación y Configuración
 
 ### 1. Clonar el repositorio
 ```bash
-git clone https://github.com/linaasco/Conexion_API.git
-### 2. Crear el entorno virtual
-python -m venv env
-### 3. Activar el entorno virtual
-Windows:
+git clone [https://github.com/linaasco/Conexion_API.git](https://github.com/linaasco/Conexion_API.git)
+cd Conexion_API
+2. Crear el entorno virtual
+Bash
+python -m venv venv
+3. Activar el entorno virtual
+En Windows:
 
-env\Scripts\activate
-Linux / macOS:
+PowerShell
+.\venv\Scripts\activate
+En Linux / macOS:
 
-source env/bin/activate
-### 4. Instalar dependencias
-pip install -r requirements.txt
-### 5. Crear el archivo .env
-En la raíz del proyecto, crea un archivo llamado .env y agrega:
+Bash
+source venv/bin/activate
+4. Instalar dependencias
+Si tienes problemas con el comando pip directo, usa el prefijo de python:
 
-GEMINI_API_KEY=TU_API_KEY
-Reemplaza TU_API_KEY por tu clave real de Gemini.
+Bash
+python -m pip install -r requirements.txt
+5. Crear el archivo .env
+En la raíz del proyecto, crea un archivo llamado .env y agrega tu API Key:
 
-### 6. Ejecutar el script
+Fragmento de código
+GEMINI_API_KEY=TU_API_KEY_AQUI
+Nota: Reemplaza TU_API_KEY_AQUI por tu clave real obtenida en Google AI Studio.
+
+6. Ejecutar el script
+Bash
 python app_gemini.py
 
-## Evidencia de ejecución
+Evidencia de ejecución
 
 ![Evidencia](evidencia.png)
